@@ -1,0 +1,96 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0.625em;
+    font-size: 16px;
+    width: 25em;
+    background-color: rgb(239, 240, 244);
+    color: rgb(80, 91, 103);
+}
+
+input, button {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+*, *:after, *:before {
+    border-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+.status {
+    width: 0.6em;
+    height: 0.6em;
+    content: '';
+    border-radius: 0.6em;
+    background: #3DBC72;
+    position: absolute;
+    top: 0.625em;
+    right: 0.625em;
+}
+
+.status--down {
+    background: rgb(236, 106, 66);
+}
+
+.feedback {
+    margin: 0;
+    padding: 0.625em;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0);
+}
+
+.feedback--error {
+    border: 1px solid rgb(236, 106, 66);
+    background: rgba(236, 106, 66, 0.4);
+    color: rgb(236, 106, 66);
+}
+
+.feedback__content {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+button {
+    border: none;
+    padding: 0 0.625em;
+    text-transform: uppercase;
+    background-color: #3B4F5E;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.2s opacity;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input {
+    border: 1px solid rgb(217, 217, 217);
+    padding: 0 0.4em;
+}
+
+
+.u-hide {
+    display: none;
+}

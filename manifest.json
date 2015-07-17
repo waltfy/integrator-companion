@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Integrator Companion",
+  "description": "Send elements to create specs. FIX.",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "main.html",
+    "default_title": "integrator-companion"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["events.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
